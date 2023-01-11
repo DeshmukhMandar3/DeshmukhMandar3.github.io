@@ -1,0 +1,26 @@
+.Skills {
+  border: solid 1px rgb(100, 255, 218);
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.Skill_icons {
+  font-size: 55px;
+  margin: auto;
+  color: "rgb(205,215,246)";
+}
+
+.skill_text {
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+  font-size: 22px;
+}
