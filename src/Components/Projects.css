@@ -1,0 +1,88 @@
+.ProjectInformation {
+  width: 45%;
+  background-color: transparent;
+  margin-left: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_title {
+  width: 100%;
+  font-size: 25px;
+  text-align: right;
+  padding: 15px;
+  color: rgb(100, 255, 218);
+}
+
+.project_description {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(10, 50, 46);
+  text-align: right;
+  padding: 15px;
+  color: rgb(205, 215, 246);
+}
+
+.project_tectstack {
+  width: 100%;
+  text-align: right;
+  padding: 15px;
+  padding-right: 15px;
+  color: rgb(205, 215, 246);
+}
+
+.project_links {
+  width: 100%;
+  flex-direction: row-reverse;
+  padding-right: 15px;
+  font-size: 35px;
+  align-items: center;
+  color: rgb(100, 255, 218);
+}
+
+.ProjectInformation_2 {
+  width: 45%;
+  background-color: transparent;
+  margin-right: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.project_title_2 {
+  width: 100%;
+  font-size: 25px;
+  text-align: left;
+  padding: 15px;
+  color: rgb(100, 255, 218);
+}
+
+.project_description_2 {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(10, 50, 46);
+  text-align: left;
+  padding: 15px;
+  color: rgb(205, 215, 246);
+}
+
+.project_tectstack_2 {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  padding-right: 15px;
+  color: rgb(205, 215, 246);
+}
+
+.project_links_2 {
+  width: 100%;
+  flex-direction: row;
+  padding-right: 15px;
+  font-size: 35px;
+  align-items: center;
+  color: rgb(100, 255, 218);
+}

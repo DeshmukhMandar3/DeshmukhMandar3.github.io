@@ -91,6 +91,7 @@ const Navbar = () => {
               <a
                 href="https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=share_link"
                 target="_blank"
+                rel="noreferrer"
               >
                 Resume
               </a>
@@ -152,6 +153,7 @@ const Navbar = () => {
               <a
                 href="https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=share_link"
                 target="_blank"
+                rel="noreferrer"
               >
                 Resume
               </a>

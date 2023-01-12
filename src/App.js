@@ -16,8 +16,8 @@ function App() {
       <Home />
       <About />
       <Skills />
-      <MyStats />
       <Projects />
+      <MyStats />
       <Contacts />
       <Button
         style={{
@@ -25,6 +25,7 @@ function App() {
           right: "5%",
           color: "rgb(100,255,218)",
           backgroundColor: "transparent",
+          backdropFilter: "blur(1rem)",
           border: "solid rgb(100,255,218) 1px",
         }}
         top={{ base: "600px", md: "900px", lg: "450px" }}
