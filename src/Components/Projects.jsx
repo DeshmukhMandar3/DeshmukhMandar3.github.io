@@ -21,7 +21,7 @@ const Projects = () => {
         textAlign="left"
         marginLeft={{ md: "20px", base: "10px" }}
       >
-        04 Projects
+        03 Projects
       </Text>
       <Box margin={{ md: "25px" }} display={{ md: "block", base: "none" }}>
         {/* Shopetronics */}
