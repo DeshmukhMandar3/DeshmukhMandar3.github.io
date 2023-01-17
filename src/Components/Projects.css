@@ -84,5 +84,58 @@
   padding-right: 15px;
   font-size: 35px;
   align-items: center;
-  color: rgb(100, 255, 218);
+  color: rgb(95, 244, 209);
+}
+
+.Projects_small {
+  padding: 25px;
+  border: solid rgb(95, 244, 209);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.project_title_small {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(95, 244, 209);
+  margin: 12px;
+}
+
+.project_tectstack_small {
+  border: solid rgb(95, 244, 209);
+  padding: 5px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.project_description_small {
+  text-align: justify;
+  margin-bottom: 10px;
+  color: rgb(205, 215, 246);
+}
+
+.project_links_small {
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+
+.project_link_small {
+  border: solid rgb(95, 244, 209);
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  display: flex;
+  align-items: center;
+  color: rgb(95, 244, 209);
+}
+
+.porject_link_small:hover {
+  background: rgb(124, 255, 224);
+  cursor: pointer;
 }

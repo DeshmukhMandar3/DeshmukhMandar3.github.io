@@ -31,11 +31,11 @@ const Skills = () => {
         02 Skills
       </Text>
       <SimpleGrid
-        columns={{ base: 2, md: 4 }}
+        columns={{ base: 2, sm: 3, md: 4, lg: 4 }}
         spacing={{ base: 5, md: 10 }}
         color={"rgb(205,215,246)"}
         margin={{ md: "25px" }}
-        paddingLeft={{ md: "25px" }}
+        paddingLeft={{ md: "25px", sm: "30px" }}
         paddingTop={"10"}
       >
         <Box className={"Skills"}>

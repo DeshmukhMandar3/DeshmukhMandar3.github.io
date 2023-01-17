@@ -28,12 +28,14 @@ const Navbar = () => {
         top: "0",
         fontFamily: "monospace",
         fontSize: "16px",
+        zIndex: 3,
       }}
     >
       <Box
         bg={useColorModeValue("rgb(11,25,46)", "gray.900")}
         px={4}
         boxShadow={"2xl"}
+        zIndex={2}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box h={16}>
@@ -150,13 +152,21 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <a
-                href="https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=share_link"
-                target="_blank"
-                rel="noreferrer"
+              <Button
+                bg={"rgb(11,45,42)"}
+                border={"solid rgb(100,255,218)"}
+                _hover={{
+                  bg: "rgb(11,25,46)",
+                }}
               >
-                Resume
-              </a>
+                <a
+                  href="https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=share_link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+              </Button>
             </Stack>
           </Box>
         ) : null}
