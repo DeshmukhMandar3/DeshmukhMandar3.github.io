@@ -1,7 +1,12 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
+  // new Typewriter("#typewriter", {
+  // strings: ["Hello", "World"],
+  // autoStart: true,
+  // });
   return (
     <Box
       style={{
@@ -33,6 +38,7 @@ const Home = () => {
       >
         Mandar Deshmukh.
       </Text>
+
       <Text
         fontSize={{ md: "60px", base: "30px" }}
         fontWeight="bold"
@@ -41,8 +47,35 @@ const Home = () => {
         marginTop={"0px"}
         color={"rgb(205,215,246)"}
       >
-        I'm a Full Stack Web Developer.
+        <Typewriter
+          options={{
+            strings: ["I'm a Full Stack Web Developer."],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </Text>
+      <Box
+        textAlign={"left"}
+        margin={{ md: "20px", base: "10px" }}
+        marginTop={"20px"}
+      >
+        <a
+          href="Mandar-Deshmukh-Resume.pdf"
+          download={"Mandar-Deshmukh-Resume.pdf"}
+        >
+          <Button
+            bg={"rgb(11,45,42)"}
+            border={"solid rgb(100,255,218)"}
+            _hover={{
+              bg: "rgb(11,25,46)",
+            }}
+            fontSize={"20px"}
+          >
+            Resume
+          </Button>
+        </a>
+      </Box>
     </Box>
   );
 };

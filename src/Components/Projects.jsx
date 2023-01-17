@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text, Button } from "@chakra-ui/react";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import "./Projects.css";
 
@@ -24,6 +24,7 @@ const Projects = () => {
         04 Projects
       </Text>
       <Box margin={{ md: "25px" }} display={{ md: "block", base: "none" }}>
+        {/* Shopetronics */}
         <Flex alignItems={"center"} padding={"25px"} w="100%" margin="auto">
           <Box w="60%" bg={"brown"} borderRadius={"5px"}>
             <Image
@@ -50,7 +51,18 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   {" "}
-                  <span class="material-symbols-outlined">open_in_new</span>
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    {" "}
+                    Live&nbsp;
+                    <span class="material-symbols-outlined">open_in_new</span>
+                  </Button>
                 </a>
               </Box>
               <Box margin={"5px"}>
@@ -60,13 +72,24 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   {" "}
-                  <AiFillGithub />
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    Github&nbsp;
+                    <AiFillGithub />
+                  </Button>
                 </a>
               </Box>
             </Flex>
           </Box>
         </Flex>
 
+        {/* BestReads */}
         <Flex
           alignItems={"center"}
           padding={"25px"}
@@ -91,7 +114,17 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   {" "}
-                  <AiFillGithub />
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    Github&nbsp;
+                    <AiFillGithub />
+                  </Button>
                 </a>
               </Box>
               <Box margin={"5px"}>
@@ -100,8 +133,17 @@ const Projects = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  {" "}
-                  <span class="material-symbols-outlined">open_in_new</span>
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    Live&nbsp;
+                    <span class="material-symbols-outlined">open_in_new</span>
+                  </Button>
                 </a>
               </Box>
             </Flex>
@@ -114,6 +156,7 @@ const Projects = () => {
           </Box>
         </Flex>
 
+        {/* 1mg.com */}
         <Flex
           alignItems={"center"}
           padding={"25px"}
@@ -144,7 +187,17 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   {" "}
-                  <span class="material-symbols-outlined">open_in_new</span>
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    Live&nbsp;{" "}
+                    <span class="material-symbols-outlined">open_in_new</span>
+                  </Button>
                 </a>
               </Box>
               <Box margin={"5px"}>
@@ -154,10 +207,86 @@ const Projects = () => {
                   rel="noreferrer"
                 >
                   {" "}
-                  <AiFillGithub />
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    Github&nbsp;
+                    <AiFillGithub />
+                  </Button>
                 </a>
               </Box>
             </Flex>
+          </Box>
+        </Flex>
+        {/* Hotstar */}
+        <Flex
+          alignItems={"center"}
+          padding={"25px"}
+          w="100%"
+          margin="auto"
+          marginTop={"25px"}
+        >
+          <Box className="ProjectInformation_2">
+            {" "}
+            <Box className="project_title_2">Hotstar.com</Box>
+            <Box className="project_description_2">
+              This Application shows different movie Posters with the help of
+              carousel. It is also having sorting functionality. which sort
+              movies according to ratings.
+            </Box>
+            <Box className="project_tectstack_2">HTML | CSS | JavaScript</Box>
+            <Flex className="project_links_2">
+              <Box margin={"5px"}>
+                <a
+                  href="https://github.com/DeshmukhMandar3/Hotstar-application"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    Github&nbsp;
+                    <AiFillGithub />
+                  </Button>
+                </a>
+              </Box>
+              <Box margin={"5px"}>
+                <a
+                  href="https://hotstar-nine.vercel.app/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <Button
+                    bg={"rgb(11,45,42)"}
+                    border={"solid rgb(100,255,218)"}
+                    _hover={{
+                      bg: "rgb(11,25,46)",
+                    }}
+                    fontSize={"18px"}
+                  >
+                    Live&nbsp;
+                    <span class="material-symbols-outlined">open_in_new</span>
+                  </Button>
+                </a>
+              </Box>
+            </Flex>
+          </Box>
+          <Box w="60%" bg={"brown"} borderRadius={"5px"}>
+            <Image
+              borderRadius={"5px"}
+              src="https://64.media.tumblr.com/8fea176c92ccdac9096be59adf2aec82/17086dc4460b8391-94/s1280x1920/6c0e11c252c5cfd0636855a91f9de158e7ede7ad.pnj"
+            />
           </Box>
         </Flex>
       </Box>
@@ -266,6 +395,42 @@ const Projects = () => {
             <Box className="project_link_small">
               <a
                 href="https://inspiring-piroshki-0a93fe.netlify.app/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {" "}
+                <span class="material-symbols-outlined">open_in_new</span>
+              </a>
+            </Box>
+          </Flex>
+        </Box>
+
+        <Box className="Projects_small">
+          <Image
+            borderRadius={"5px"}
+            src="https://64.media.tumblr.com/8fea176c92ccdac9096be59adf2aec82/17086dc4460b8391-94/s1280x1920/6c0e11c252c5cfd0636855a91f9de158e7ede7ad.pnj"
+          />
+          <Box className="project_title_small">Hotstar.com</Box>
+          <Box className="project_tectstack_small">HTML | CSS | JavaScript</Box>
+          <Box className="project_description_small">
+            This Application shows different movie Posters with the help of
+            carousel. It is also having sorting functionality. which sort movies
+            according to ratings.
+          </Box>
+          <Flex className="project_links_small">
+            <Box className="project_link_small">
+              <a
+                href="https://github.com/DeshmukhMandar3/Hotstar-application"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {" "}
+                <AiFillGithub />
+              </a>
+            </Box>
+            <Box className="project_link_small">
+              <a
+                href="https://hotstar-nine.vercel.app/"
                 target={"_blank"}
                 rel="noreferrer"
               >
