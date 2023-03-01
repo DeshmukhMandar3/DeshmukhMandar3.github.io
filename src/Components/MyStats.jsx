@@ -15,11 +15,19 @@ const MyStats = () => {
     >
       <Text
         color="rgb(100,255,218)"
-        fontSize={"30px"}
-        textAlign="left"
+        fontSize={{ md: "35px", base: "28px" }}
+        textAlign="center"
         marginLeft={{ md: "20px", base: "10px" }}
       >
-        04 Stats
+        <span
+          style={{
+            borderBottom: "solid",
+            padding: "0px",
+            paddingBottom: "8px",
+          }}
+        >
+          STATS
+        </span>
       </Text>
 
       <div align="center" style={{ margin: "25px" }}>

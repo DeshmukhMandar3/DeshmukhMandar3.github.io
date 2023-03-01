@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import "../";
 
 const About = () => {
   return (
@@ -15,20 +16,29 @@ const About = () => {
     >
       <Text
         color="rgb(100,255,218)"
-        fontSize={"30px"}
-        textAlign="left"
-        marginLeft={{ md: "20px", base: "10px" }}
+        fontSize={{ md: "35px", base: "28px" }}
+        textAlign="center"
+        marginLeft={{ md: "25px", base: "10px" }}
       >
-        01. About Me
+        <span
+          style={{
+            borderBottom: "solid",
+            padding: "0px",
+            paddingTop: "5px",
+            paddingBottom: "8px",
+          }}
+        >
+          ABOUT ME
+        </span>
       </Text>
       <Flex
         margin={{ md: "20px", base: "10px" }}
-        flexDirection={{ base: "column", md: "row" }}
+        flexDirection={{ base: "column", md: "row", sm: "row" }}
         alignItems={"center"}
       >
-        <Box padding={"25px"} width={{ base: "100%", md: "35%" }}>
+        <Box padding={"25px"} width={{ base: "100%", md: "35%", sm: "45%" }}>
           <img
-            src="https://64.media.tumblr.com/0844334042d17f6b6bd93edd92533e0c/368170b69bc006c4-e0/s540x810/9b815b8d0e71928448850f82c9c66459f01910bb.pnj"
+            src="https://64.media.tumblr.com/2c83b1c409bd9b9a2dbb01aed262b991/b7e14e3195c6d7ff-da/s1280x1920/1fd4b30a0aef87d1fcf987481c514efc0ea1f411.jpg"
             alt="headshot"
             style={{
               width: "700px",

@@ -3,10 +3,6 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
-  // new Typewriter("#typewriter", {
-  // strings: ["Hello", "World"],
-  // autoStart: true,
-  // });
   return (
     <Box
       style={{
@@ -25,31 +21,35 @@ const Home = () => {
         fontSize={{ md: "30px", base: "20px" }}
         margin={{ md: "20px", base: "10px" }}
         marginBottom={"10px"}
+        marginTop={{ md: "60px", base: "25px", lg: "60px" }}
       >
         Hi, My name is
       </Text>
       <Text
-        fontSize={{ md: "60px", base: "30px" }}
+        fontSize={{ md: "50px", base: "30px" }}
         fontWeight="bold"
         color={"white"}
         textAlign={"left"}
         margin={{ md: "20px", base: "10px" }}
-        marginTop={"0px"}
+        marginTop={{ md: "35px", base: "15px", lg: "35px" }}
       >
-        Mandar Deshmukh.
+        Mandar Deshmukh
       </Text>
 
       <Text
-        fontSize={{ md: "60px", base: "30px" }}
+        fontSize={{ md: "50px", base: "30px" }}
         fontWeight="bold"
         textAlign={"left"}
         margin={{ md: "20px", base: "10px" }}
-        marginTop={"0px"}
         color={"rgb(205,215,246)"}
+        marginTop={{ md: "35px", base: "15px", lg: "35px" }}
       >
         <Typewriter
           options={{
-            strings: ["I'm a Full Stack Web Developer."],
+            strings: [
+              "I'm a Full Stack Web Developer.",
+              "I build things for the Web.",
+            ],
             autoStart: true,
             loop: true,
           }}
@@ -58,11 +58,18 @@ const Home = () => {
       <Box
         textAlign={"left"}
         margin={{ md: "20px", base: "10px" }}
-        marginTop={"20px"}
+        marginTop={{ md: "35px", base: "25px", lg: "35" }}
       >
         <a
-          href="Mandar-Deshmukh-Resume.pdf"
-          download={"Mandar-Deshmukh-Resume.pdf"}
+          href={"fw21_0860-Mandar-Deshmukh-Resume.pdf"}
+          onClick={() =>
+            window.open(
+              `https://drive.google.com/file/d/19JAAa0ZwpQENiw_QiBCUMhC11PPD6znn/view?usp=share_link`
+            )
+          }
+          rel="noreferrer"
+          target="_blank"
+          download="fw21_0860-Mandar-Deshmukh-Resume.pdf"
         >
           <Button
             bg={"rgb(11,45,42)"}
@@ -71,6 +78,7 @@ const Home = () => {
               bg: "rgb(11,25,46)",
             }}
             fontSize={"20px"}
+            marginBottom={"45px"}
           >
             Resume
           </Button>

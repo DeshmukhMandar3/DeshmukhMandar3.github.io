@@ -31,12 +31,7 @@ const Navbar = () => {
         zIndex: 3,
       }}
     >
-      <Box
-        bg={useColorModeValue("rgb(11,25,46)", "gray.900")}
-        px={4}
-        boxShadow={"2xl"}
-        zIndex={2}
-      >
+      <Box bg={"rgb(11,25,46)"} px={4} boxShadow={"2xl"} zIndex={2}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box h={16}>
             <Link to="home" smooth="true" offset={-50}>
@@ -90,10 +85,23 @@ const Navbar = () => {
                 bg: "rgb(11,25,46)",
               }}
             >
-              <a
+              {/* <a
                 href="https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=share_link"
                 target="_blank"
                 rel="noreferrer"
+              >
+                Resume
+              </a> */}
+              <a
+                href={"fw21_0860-Mandar-Deshmukh-Resume.pdf"}
+                onClick={() =>
+                  window.open(
+                    `https://drive.google.com/file/d/19JAAa0ZwpQENiw_QiBCUMhC11PPD6znn/view?usp=share_link`
+                  )
+                }
+                rel="noreferrer"
+                target="_blank"
+                download="fw21_0860-Mandar-Deshmukh-Resume.pdf"
               >
                 Resume
               </a>
@@ -160,9 +168,15 @@ const Navbar = () => {
                 }}
               >
                 <a
-                  href="https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=share_link"
-                  target="_blank"
+                  href={"fw21_0860-Mandar-Deshmukh-Resume.pdf"}
+                  onClick={() =>
+                    window.open(
+                      `https://drive.google.com/file/d/19JAAa0ZwpQENiw_QiBCUMhC11PPD6znn/view?usp=share_link`
+                    )
+                  }
                   rel="noreferrer"
+                  target="_blank"
+                  download="fw21_0860-Mandar-Deshmukh-Resume.pdf"
                 >
                   Resume
                 </a>

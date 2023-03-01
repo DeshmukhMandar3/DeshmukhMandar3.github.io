@@ -32,3 +32,13 @@
 .content {
   color: white;
 }
+
+.form {
+  padding: 25px;
+  border: solid rgb(100, 255, 218);
+  height: auto;
+  margin: 15px;
+  margin-top: 20px;
+  margin-bottom: 85px;
+  border-radius: 5px;
+}

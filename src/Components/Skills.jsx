@@ -4,10 +4,17 @@ import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { RiCss3Fill, RiTeamFill } from "react-icons/ri";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import { FaReact, FaPeopleArrows } from "react-icons/fa";
-import { SiRedux, SiTypescript, SiExpress, SiMongodb } from "react-icons/si";
+import {
+  SiRedux,
+  SiTypescript,
+  SiExpress,
+  SiMongodb,
+  SiChakraui,
+  SiStorybook,
+} from "react-icons/si";
 import { SiCypress } from "react-icons/si";
 import { TbBrandNextjs, TbBulb } from "react-icons/tb";
-import { DiGit, DiVisualstudio } from "react-icons/di";
+import { DiGit, DiNpm, DiVisualstudio } from "react-icons/di";
 import "./skills.css";
 
 const Skills = () => {
@@ -24,11 +31,31 @@ const Skills = () => {
     >
       <Text
         color="rgb(100,255,218)"
-        fontSize={"30px"}
-        textAlign="left"
+        fontSize={{ md: "35px", base: "28px" }}
+        textAlign="center"
         marginLeft={{ md: "20px", base: "10px" }}
       >
-        02 Skills
+        <span
+          style={{
+            borderBottom: "solid",
+            padding: "0px",
+            paddingTop: "5px",
+            paddingBottom: "8px",
+          }}
+        >
+          SKILLS
+        </span>
+      </Text>
+      {/* Languages Framework & Libraries */}
+      <Text
+        textAlign={"center"}
+        fontSize={{ md: "30px", base: "20px" }}
+        margin={{ md: "20px", base: "10px" }}
+        marginBottom="25px"
+        marginTop={"30px"}
+        color="white"
+      >
+        Languages Frameworks & Libraries
       </Text>
       <SimpleGrid
         columns={{ base: 2, sm: 3, md: 4, lg: 4 }}
@@ -36,7 +63,7 @@ const Skills = () => {
         color={"rgb(205,215,246)"}
         margin={{ md: "25px" }}
         paddingLeft={{ md: "25px", sm: "30px" }}
-        paddingTop={"10"}
+        marginTop="0px"
       >
         <Box className={"Skills"}>
           <AiFillHtml5 className={"Skill_icons"} />
@@ -63,12 +90,12 @@ const Skills = () => {
           <Text className={"skill_text"}>TypeScript</Text>
         </Box>
         <Box className={"Skills"}>
-          <TbBrandNextjs className={"Skill_icons"} />
-          <Text className={"skill_text"}>NextJS</Text>
+          <SiChakraui className={"Skill_icons"} />
+          <Text className={"skill_text"}>ChakraUI</Text>
         </Box>
         <Box className={"Skills"}>
-          <SiCypress className={"Skill_icons"} />
-          <Text className={"skill_text"}>Cypress</Text>
+          <TbBrandNextjs className={"Skill_icons"} />
+          <Text className={"skill_text"}>NextJS</Text>
         </Box>
         <Box className={"Skills"}>
           <IoLogoNodejs className={"Skill_icons"} />
@@ -78,10 +105,27 @@ const Skills = () => {
           <SiExpress className={"Skill_icons"} />
           <Text className={"skill_text"}>ExpressJS</Text>
         </Box>
-        <Box className={"Skills"}>
-          <SiMongodb className={"Skill_icons"} />
-          <Text className={"skill_text"}>MongoDB</Text>
-        </Box>
+      </SimpleGrid>
+
+      {/* tools */}
+      <Text
+        textAlign={"center"}
+        fontSize={{ md: "30px", base: "20px" }}
+        margin={{ md: "20px", base: "10px" }}
+        marginBottom="25px"
+        color="white"
+        paddingTop="45px"
+      >
+        Tools
+      </Text>
+      <SimpleGrid
+        columns={{ base: 2, sm: 3, md: 4, lg: 4 }}
+        spacing={{ base: 5, md: 10 }}
+        color={"rgb(205,215,246)"}
+        margin={{ md: "25px" }}
+        paddingLeft={{ md: "25px", sm: "30px" }}
+        marginTop={"10px"}
+      >
         <Box className={"Skills"}>
           <DiGit className={"Skill_icons"} />
           <Text className={"skill_text"}>Git</Text>
@@ -93,6 +137,22 @@ const Skills = () => {
         <Box className={"Skills"}>
           <DiVisualstudio className={"Skill_icons"} />
           <Text className={"skill_text"}>VS code</Text>
+        </Box>
+        <Box className={"Skills"}>
+          <SiMongodb className={"Skill_icons"} />
+          <Text className={"skill_text"}>MongoDB</Text>
+        </Box>
+        <Box className={"Skills"}>
+          <SiCypress className={"Skill_icons"} />
+          <Text className={"skill_text"}>Cypress</Text>
+        </Box>
+        <Box className={"Skills"}>
+          <DiNpm className={"Skill_icons"} />
+          <Text className={"skill_text"}>NPM</Text>
+        </Box>
+        <Box className={"Skills"}>
+          <SiStorybook className={"Skill_icons"} />
+          <Text className={"skill_text"}>Storybook</Text>
         </Box>
       </SimpleGrid>
     </Box>
