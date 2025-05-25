@@ -96,12 +96,11 @@ const Navbar = () => {
                 href={"fw21_0860-Mandar-Deshmukh-Resume.pdf"}
                 onClick={() =>
                   window.open(
-                    `https://drive.google.com/file/d/1ADgeqR-cKo3-YCr7dG_m-8fVMj-ELjmv/view?usp=drivesdk`
+                    `https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=drive_link`
                   )
                 }
                 rel="noreferrer"
                 target="_blank"
-                download="fw21_0860-Mandar-Deshmukh-Resume.pdf"
               >
                 Resume
               </a>
@@ -171,12 +170,11 @@ const Navbar = () => {
                   href={"fw21_0860-Mandar-Deshmukh-Resume.pdf"}
                   onClick={() =>
                     window.open(
-                      `https://drive.google.com/file/d/1ADgeqR-cKo3-YCr7dG_m-8fVMj-ELjmv/view?usp=drivesdk`
+                      `https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=drive_link`
                     )
                   }
                   rel="noreferrer"
                   target="_blank"
-                  download="fw21_0860-Mandar-Deshmukh-Resume.pdf"
                 >
                   Resume
                 </a>
