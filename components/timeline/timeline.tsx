@@ -21,7 +21,7 @@ export const Timeline = () => {
             Learning & Career <span className="text-gradient-emerald">Timeline</span>
           </h2>
           <p className="text-slate-400 mt-3 max-w-2xl text-base sm:text-lg">
-            From Mechanical Engineering to Full-Stack PWA craft and mastering distributed systems architecture.
+            From Mechanical Engineering to Full-Stack PWA craft and scalable backend architecture.
           </p>
         </div>
 

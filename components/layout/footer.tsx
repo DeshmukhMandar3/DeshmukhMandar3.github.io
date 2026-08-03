@@ -22,7 +22,7 @@ export const Footer = () => {
               <span>Mandar Deshmukh</span>
             </div>
             <p className="text-sm text-slate-400 max-w-md leading-relaxed">
-              Full Stack Developer specializing in high-throughput web applications, Node.js/PostgreSQL backend architecture, Redis caching, and distributed systems.
+              Full Stack Developer specializing in high-throughput web applications, PWAs, Node.js/PostgreSQL backend architecture, and secure session management.
             </p>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-400">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />

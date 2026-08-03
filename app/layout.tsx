@@ -31,7 +31,8 @@ export const metadata: Metadata = {
     "Node.js Developer",
     "PostgreSQL Architecture",
     "Redis Caching",
-    "Distributed Systems",
+    "Progressive Web Applications",
+    "Session Management",
     "Hyperface Technologies",
     "TypeScript Portfolio"
   ],
@@ -81,7 +82,7 @@ export default function RootLayout({
       "Backend Architecture",
       "PostgreSQL",
       "Redis",
-      "Distributed Systems",
+      "Session Management & Security",
       "Progressive Web Applications"
     ],
   };

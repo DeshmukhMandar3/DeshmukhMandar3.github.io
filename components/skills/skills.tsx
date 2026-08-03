@@ -32,7 +32,7 @@ export const Skills = () => {
         return Server;
       case "Databases & Caching":
         return Database;
-      case "Distributed Systems & System Design":
+      case "System Design & Concepts":
         return Layers;
       case "Frontend Craftsmanship":
         return Terminal;

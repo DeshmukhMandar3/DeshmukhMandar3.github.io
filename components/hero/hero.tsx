@@ -31,7 +31,7 @@ export const Hero = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
               <span className="text-xs font-mono text-slate-300 font-medium">
-                Full Stack Developer <span className="text-slate-600">|</span> High-Performance & Distributed Web Systems
+                Full Stack Developer <span className="text-slate-600">|</span> PWAs, Auth & Backend Architecture
               </span>
             </div>
           </motion.div>

@@ -18,7 +18,7 @@ export const BlogPreview = () => {
       title: "Cache-Aside Redis Strategy with PostgreSQL: Handling TTL Invalidation",
       date: "Coming Soon",
       readTime: "5 min read",
-      category: "Distributed Systems",
+      category: "Caching & Performance",
       excerpt: "Step-by-step implementation of Redis in-memory caching to achieve sub-5ms API response times without serving stale data."
     }
   ];

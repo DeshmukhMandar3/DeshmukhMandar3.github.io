@@ -3,28 +3,28 @@ import { Project, SkillCategory, TimelineItem, ExperienceItem } from "@/types";
 export const PERSONAL_INFO = {
   name: "Mandar Deshmukh",
   role: "Full Stack Developer",
-  targetRole: "Full Stack & Distributed Systems Engineer",
-  tagline: "Building scalable web applications with modern frontend, backend and distributed systems.",
+  targetRole: "Full Stack & Backend Engineer",
+  tagline: "Building scalable web applications, PWAs, secure auth, and robust backend systems.",
   location: "India",
   email: "mandardeshmukh.mud@gmail.com",
   phone: "+91 8087352864",
   github: "https://github.com/DeshmukhMandar3",
   linkedin: "https://www.linkedin.com/in/mandar-deshmukh-62821b189/",
   resumeUrl: "https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=drive_link",
-  about: `I am a Full Stack Developer with a background in Mechanical Engineering, driven by a passion for clean architecture, system performance, and robust software design. Currently building mission-critical fintech products at Hyperface Technologies, I specialize in developing high-throughput web applications, secure authentication systems, and PWA platforms. Currently deepening my expertise in backend engineering, PostgreSQL optimization, Redis caching patterns, and distributed systems to craft resilient infrastructure at scale.`,
+  about: `I am a Full Stack Developer with a background in Mechanical Engineering, driven by a passion for clean architecture, system performance, and robust software design. Currently building mission-critical fintech products at Hyperface Technologies, I specialize in developing high-throughput web applications, secure authentication systems, and PWA platforms. Currently deepening my expertise in backend engineering, PostgreSQL optimization, Redis caching patterns, PWAs, and secure session management to craft resilient applications at scale.`,
   stats: [
     { label: "Practical Coding Hours", value: "1200+" },
     { label: "Current Focus", value: "Fintech & Backend Architecture" },
-    { label: "Core Mindset", value: "Distributed Systems & Scalability" },
+    { label: "Core Mindset", value: "PWA Craft & System Scalability" },
     { label: "Target Track", value: "Full Stack & Systems" },
   ],
   interests: [
     "Backend Engineering",
-    "Distributed Systems",
+    "Progressive Web Apps (PWAs)",
+    "Session Management & Auth Architecture",
     "System Design & Clean Architecture",
     "High Performance Caching (Redis)",
     "PostgreSQL Database Tuning",
-    "Scalable API Gateways & Middleware",
   ],
 };
 
@@ -83,8 +83,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     ]
   },
   {
-    name: "Distributed Systems & System Design",
-    description: "Foundational concepts for building high-scale, resilient backend systems.",
+    name: "System Design & Concepts",
+    description: "Foundational concepts for building high-scale, resilient web and backend applications.",
     skills: [
       { name: "Layered Architecture", level: "Advanced", highlight: true },
       { name: "Horizontal Scaling", level: "Intermediate" },
@@ -273,7 +273,7 @@ export const TIMELINE: TimelineItem[] = [
   {
     id: "caching-systems",
     period: "Performance & Caching",
-    title: "Redis Cache-Aside & Distributed Patterns",
+    title: "Redis Cache-Aside & Performance Patterns",
     subtitle: "Sub-Millisecond Queries & Rate Limiting",
     category: "Architecture",
     description: "Implemented Redis in-memory caching strategies, Cache-Aside pattern, token blacklist management, rate-limiting algorithms, and query latency reduction.",
@@ -283,13 +283,13 @@ export const TIMELINE: TimelineItem[] = [
   {
     id: "senior-preparation",
     period: "Next Frontier",
-    title: "Distributed Systems & Advanced Architecture",
-    subtitle: "Scalable Infrastructure, Load Balancing & System Design",
+    title: "System Design & Advanced Architecture",
+    subtitle: "Scalable Infrastructure, API Gateways & PWA Security",
     category: "Architecture",
     isCurrent: true,
-    description: "Actively studying and implementing distributed system fundamentals: Message Queues, Horizontal Scaling, API Gateway patterns, Event-Driven Architecture, and high-concurrency backend design.",
+    description: "Actively studying and implementing system design fundamentals: API Gateway patterns, Rate Limiting, PWAs, Session Management, and high-concurrency backend design.",
     keyTakeaways: ["System Design trade-offs", "High availability", "Fault tolerance"],
-    technologies: ["Distributed Systems", "Message Queues", "Event-Driven", "Docker"]
+    technologies: ["System Design", "PWA Architecture", "Session Management", "Docker"]
   }
 ];
 

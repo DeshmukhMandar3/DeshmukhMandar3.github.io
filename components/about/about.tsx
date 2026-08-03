@@ -21,7 +21,7 @@ export const About = () => {
             About <span className="text-gradient-emerald">Mandar Deshmukh</span>
           </h2>
           <p className="text-slate-400 mt-3 max-w-2xl text-base sm:text-lg">
-            Engineering discipline applied to full-stack web software and distributed backend architecture.
+            Engineering discipline applied to full-stack web software and scalable backend architecture.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export const About = () => {
                     The Engineering Journey
                   </h3>
                   <span className="text-xs text-slate-400 font-mono">
-                    Mechanical Engineering → Full Stack Developer → Distributed Systems Track
+                    Mechanical Engineering → Full Stack Developer → Scalable Backend Track
                   </span>
                 </div>
               </div>
