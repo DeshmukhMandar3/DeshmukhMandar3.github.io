@@ -81,7 +81,7 @@ export const Navbar = () => {
               <span className="font-mono text-sm font-bold text-slate-100 group-hover:text-emerald-400 transition-colors tracking-tight">
                 Mandar.dev
               </span>
-              <div className="flex items-center gap-1.5 text-[10px] text-emerald-400/90 font-mono">
+              <div className="hidden sm:flex items-center gap-1.5 text-[10px] text-emerald-400/90 font-mono">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 Available for Engineering Opportunities
               </div>
@@ -152,7 +152,9 @@ export const Navbar = () => {
             >
               <Command className="w-4 h-4 text-emerald-400" />
             </button>
-            <ThemeToggle />
+            <div className="sm:hidden">
+              <ThemeToggle />
+            </div>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"

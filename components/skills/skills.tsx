@@ -54,7 +54,7 @@ export const Skills = () => {
             Skills & <span className="text-gradient-emerald">Technical Competencies</span>
           </h2>
           <p className="text-slate-400 mt-3 max-w-2xl text-base sm:text-lg">
-            Structured skill categories highlighting full-stack engineering and backend architecture mastery.
+            Each skill is marked by where I have used it: at work, in my own projects, or still learning.
           </p>
         </div>
 
@@ -140,8 +140,10 @@ export const Skills = () => {
                 </div>
 
                 <div className="pt-3 border-t border-slate-800/60 text-[11px] font-mono text-slate-500 flex items-center justify-between">
-                  <span>{category.skills.length} Capabilities</span>
-                  <span className="text-emerald-400/80">Production Verified</span>
+                  <span>{category.skills.length} skills</span>
+                  <span className="text-emerald-400/80">
+                    {category.skills.filter((s) => s.level === "Work").length} used at work
+                  </span>
                 </div>
               </Card>
             );

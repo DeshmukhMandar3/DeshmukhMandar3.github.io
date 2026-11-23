@@ -39,20 +39,20 @@ export const About = () => {
                     The Engineering Journey
                   </h3>
                   <span className="text-xs text-slate-400 font-mono">
-                    Mechanical Engineering → Full Stack Developer → Scalable Backend Track
+                    Mechanical Engineering → Full Stack Engineer → Backend focus
                   </span>
                 </div>
               </div>
 
               <div className="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
                 <p>
-                  My journey began in <span className="text-slate-100 font-semibold">Mechanical Engineering</span>, where I mastered mathematical modeling, thermodynamics, and rigorous system analysis. That structural mindset translated seamlessly into software engineering when I dedicated 1200+ hours to practical programming and software design.
+                  I studied <span className="text-slate-100 font-semibold">Mechanical Engineering</span> at the University of Mumbai (2016–2019), where I learned mathematical modeling and systematic problem solving. In 2022–23 I moved into software through Masai School&apos;s full stack programme: 1200+ hours of hands-on coding.
                 </p>
                 <p>
-                  Today, as a <span className="text-emerald-400 font-semibold">Full Stack Developer at Hyperface Technologies</span>, I engineer production credit card management applications and Progressive Web Apps (PWAs). I take pride in delivering resilient user experiences, zero-regression features, and secure authentication flows.
+                  Since May 2023 I have been a <span className="text-emerald-400 font-semibold">Software Engineer at Hyperface Technologies</span>. I built the co-branded credit card PWA that is live for AU Small Finance Bank, ixigo, Paytm and CheQ, and now work on the Node.js services behind it: customer-level sessions, a shared session library, and bank security requirements.
                 </p>
                 <p>
-                  I thrive on solving complex backend problems: decoupling data layers with the <span className="text-cyan-400 font-mono">Repository Pattern</span>, enforcing <span className="text-cyan-400 font-mono">Cache-Aside Redis</span> strategies, and optimizing PostgreSQL queries for high concurrency.
+                  Outside work I build backend projects to go deeper: separating data access with the <span className="text-cyan-400 font-mono">Repository Pattern</span>, caching with <span className="text-cyan-400 font-mono">Cache-Aside Redis</span>, and writing PostgreSQL queries with dynamic filtering and pagination.
                 </p>
               </div>
 

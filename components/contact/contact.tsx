@@ -19,6 +19,7 @@ interface ContactFormData {
 export const Contact = () => {
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [sendFailed, setSendFailed] = useState(false);
 
   const {
     register,
@@ -28,18 +29,21 @@ export const Contact = () => {
   } = useForm<ContactFormData>();
 
   const onSubmit = async (data: ContactFormData) => {
+    setSendFailed(false);
     try {
       // Send form via Getform.io endpoint preserved from original setup
-      await fetch("https://getform.io/f/4c7f4c3d-b837-48eb-a797-0c571063d3f4", {
+      const res = await fetch("https://getform.io/f/4c7f4c3d-b837-48eb-a797-0c571063d3f4", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(data),
       });
+      if (!res.ok) throw new Error(`Form endpoint returned ${res.status}`);
       setSubmitted(true);
       reset();
       setTimeout(() => setSubmitted(false), 5000);
     } catch (e) {
       console.error(e);
+      setSendFailed(true);
     }
   };
 
@@ -170,6 +174,13 @@ export const Contact = () => {
                 <div className="p-4 mb-6 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono flex items-center gap-2">
                   <Sparkles className="w-4 h-4 shrink-0" />
                   <span>Thank you! Your message has been transmitted successfully.</span>
+                </div>
+              )}
+
+              {sendFailed && (
+                <div role="alert" className="p-4 mb-6 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs font-mono">
+                  Your message could not be sent. Please email me directly at{" "}
+                  <a href={`mailto:${PERSONAL_INFO.email}`} className="underline">{PERSONAL_INFO.email}</a>.
                 </div>
               )}
 

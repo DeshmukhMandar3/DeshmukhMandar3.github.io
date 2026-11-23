@@ -110,10 +110,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               </a>
             )}
           </div>
-          
-          <span className="text-[10px] font-mono text-slate-600">
-            Production Ready
-          </span>
         </div>
 
       </Card>

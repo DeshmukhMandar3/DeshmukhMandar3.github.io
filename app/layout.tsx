@@ -22,12 +22,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${PERSONAL_INFO.name} | ${PERSONAL_INFO.role} & Backend Engineer`,
+  metadataBase: new URL("https://deshmukhmandar3.github.io"),
+  title: `${PERSONAL_INFO.name} | ${PERSONAL_INFO.role}`,
   description: PERSONAL_INFO.tagline,
   keywords: [
     "Mandar Deshmukh",
-    "Full Stack Developer",
-    "Senior Backend Engineer",
+    "Full Stack Software Engineer",
+    "Backend Engineer",
     "Node.js Developer",
     "PostgreSQL Architecture",
     "Redis Caching",
@@ -48,11 +49,13 @@ export const metadata: Metadata = {
     url: "https://deshmukhmandar3.github.io",
     siteName: `${PERSONAL_INFO.name} Portfolio`,
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: `${PERSONAL_INFO.name} | ${PERSONAL_INFO.role}` }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${PERSONAL_INFO.name} | Full Stack & Backend Engineer`,
     description: PERSONAL_INFO.tagline,
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

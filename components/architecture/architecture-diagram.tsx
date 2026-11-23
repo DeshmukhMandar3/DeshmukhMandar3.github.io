@@ -73,7 +73,7 @@ export const ArchitectureDiagram = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Zap className="w-4 h-4 text-emerald-400" />
-              <span className="text-xs font-bold text-emerald-300">Redis Cache Hit (&lt;5ms)</span>
+              <span className="text-xs font-bold text-emerald-300">Redis Cache Hit</span>
             </div>
             <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400">FAST PATH</span>
           </div>

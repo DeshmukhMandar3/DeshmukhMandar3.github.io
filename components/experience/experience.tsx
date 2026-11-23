@@ -21,7 +21,7 @@ export const Experience = () => {
             Work <span className="text-gradient-emerald">Experience</span>
           </h2>
           <p className="text-slate-400 mt-3 max-w-2xl text-base sm:text-lg">
-            Engineering high-availability fintech products and Progressive Web Apps at scale.
+            Credit card PWAs and the backend services behind them, for banks and fintech partners.
           </p>
         </div>
 

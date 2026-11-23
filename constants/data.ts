@@ -2,16 +2,16 @@ import { Project, SkillCategory, TimelineItem, ExperienceItem } from "@/types";
 
 export const PERSONAL_INFO = {
   name: "Mandar Deshmukh",
-  role: "Full Stack Developer",
+  role: "Full Stack Software Engineer",
   targetRole: "Full Stack & Backend Engineer",
-  tagline: "Building scalable web applications, PWAs, secure auth, and robust backend systems.",
+  tagline: "Building fintech PWAs, session and auth systems, and the Node.js services behind them.",
   location: "India",
   email: "mandardeshmukh.mud@gmail.com",
   phone: "+91 8087352864",
   github: "https://github.com/DeshmukhMandar3",
   linkedin: "https://www.linkedin.com/in/mandar-deshmukh-62821b189/",
-  resumeUrl: "https://drive.google.com/file/d/19hVto_OtjE1IALwcBG89TqeCGpZnY0nI/view?usp=drive_link",
-  about: `I am a Full Stack Developer with a background in Mechanical Engineering, driven by a passion for clean architecture, system performance, and robust software design. Currently building mission-critical fintech products at Hyperface Technologies, I specialize in developing high-throughput web applications, secure authentication systems, and PWA platforms. Currently deepening my expertise in backend engineering, PostgreSQL optimization, Redis caching patterns, PWAs, and secure session management to craft resilient applications at scale.`,
+  resumeUrl: "/Mandar-Deshmukh-Resume.pdf",
+  about: `I am a Full Stack Software Engineer with a background in Mechanical Engineering. At Hyperface Technologies I build co-branded credit card PWAs in React and TypeScript, and the Node.js services that manage their sessions and authentication. Outside work I am deepening my backend skills with PostgreSQL, Redis caching patterns and layered API design.`,
   stats: [
     { label: "Practical Coding Hours", value: "1200+" },
     { label: "Current Focus", value: "Fintech & Backend Architecture" },
@@ -31,98 +31,117 @@ export const PERSONAL_INFO = {
 export const EXPERIENCE: ExperienceItem[] = [
   {
     company: "Hyperface Technologies",
-    role: "Full Stack Developer",
-    period: "Current Role",
+    role: "Software Engineer (AE-2)",
+    period: "Apr 2024 – Present",
     location: "India",
     type: "Full-Time",
-    description: "Architecting and engineering production fintech applications, credit card issuance platforms, and high-reliability Progressive Web Applications (PWAs).",
+    description: "Backend-for-frontend services, session architecture and security for Hyperface's fintech PWAs.",
     responsibilities: [
-      "Engineered secure authentication systems with token rotation and robust session management.",
-      "Developed high-performance Progressive Web Applications (PWAs) tailored for seamless credit card operations and transaction management.",
-      "Architected dashboard integrations processing real-time financial metrics and analytics with minimal latency.",
-      "Optimized frontend performance, reduced layout shifts, and streamlined state management across micro-frontend views.",
-      "Mentored junior software engineers on code quality, clean architecture principles, and TypeScript best practices.",
-      "Collaborated closely with cross-functional product and backend engineering teams to ensure 99.9% application reliability."
+      "Developed Backend for Frontend (BFF) services in Node.js and Express for our PWAs: customer-level session management with MySQL, Redis caching and REST APIs, covering token lifecycle, validation, timeouts and shared authentication across several fintech apps.",
+      "Redesigned sessions from account-level to customer-level with centralized token handling, cutting redundant authentication API calls by ~25–30%.",
+      "Extracted session logic into a shared NPM library used by 3 applications, reducing duplicated code by ~40%.",
+      "Met bank application-security requirements by configuring CSP, CORS, HSTS and security response headers through AWS Amplify, plus Clear-Site-Data on logout.",
+      "Ran JMeter load, spike and stress tests on the NCB PWA (up to ~82,000 HTTP calls per run) and traced HTTP 500/504 failures to session-token APIs and shared-database bottlenecks.",
+      "Led a team of 3 engineers to build a Smart Benefit Engine for NCB (Vietnam): milestone-based benefit tracking and voucher lifecycle management.",
+      "Designed a multi-card flow that lets customers switch between several co-branded credit cards in one interface."
     ],
-    technologies: ["React", "TypeScript", "Next.js", "Node.js", "Express", "PWA", "Rest APIs", "Redux", "Tailwind CSS"],
-    achievements: [
-      "Delivered production-grade credit card PWA features utilized by high-volume financial clients.",
-      "Established robust authentication patterns and reusable frontend/backend modules."
-    ]
+    technologies: ["Node.js", "Express", "MySQL", "Redis", "REST APIs", "React", "TypeScript", "AWS Amplify", "JMeter"],
+    achievements: []
+  },
+  {
+    company: "Hyperface Technologies",
+    role: "Software Engineer (AE-1)",
+    period: "May 2023 – Mar 2024",
+    location: "India",
+    type: "Full-Time",
+    description: "Built the co-branded credit card PWA and its reusable UI modules.",
+    responsibilities: [
+      "Built the Co-branded Credit Card PWA (CBCC-PWA) from scratch in React and TypeScript; it is live for AU Small Finance Bank, ixigo, Paytm and CheQ. Also shipped features for the Onboarding PWA and IndusInd CardsHub.",
+      "Developed reusable UI modules for Spend Analytics, Rewards, Merchant Offers and Campaigns, speeding up marketing-driven releases.",
+      "Designed a configurable UI system so each partner bank controls themes, section order and feature toggles from a central dashboard, without engineering changes.",
+      "Worked with backend services over REST APIs to improve data flow and UI responsiveness."
+    ],
+    technologies: ["React", "TypeScript", "PWA", "Redux Toolkit", "REST APIs", "SCSS"],
+    achievements: []
   }
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     name: "Backend Engineering",
-    description: "Robust API construction, authorization mechanisms, and robust server architecture.",
+    description: "APIs, sessions and authentication on Node.js.",
     skills: [
-      { name: "Node.js", level: "Production", highlight: true },
-      { name: "Express.js", level: "Production", highlight: true },
-      { name: "REST API Design", level: "Advanced", highlight: true },
-      { name: "JWT Authentication", level: "Advanced", highlight: true },
-      { name: "Refresh Token Rotation", level: "Advanced", highlight: true },
-      { name: "Zod Validation", level: "Advanced" },
-      { name: "Middleware Architecture", level: "Advanced" },
-      { name: "Repository Pattern", level: "Advanced", highlight: true },
-      { name: "Service Layer Pattern", level: "Advanced" },
-      { name: "Dynamic SQL & Pagination", level: "Advanced" },
-      { name: "bcrypt & Security", level: "Advanced" },
+      { name: "Node.js", level: "Work", highlight: true },
+      { name: "Express.js", level: "Work", highlight: true },
+      { name: "REST API Design", level: "Work", highlight: true },
+      { name: "Backend for Frontend (BFF)", level: "Work", highlight: true },
+      { name: "Session Management & Token Lifecycle", level: "Work", highlight: true },
+      { name: "Shared NPM Libraries", level: "Work" },
+      { name: "JWT Authentication", level: "Projects" },
+      { name: "Zod Validation", level: "Projects" },
+      { name: "Middleware Architecture", level: "Projects" },
+      { name: "Repository Pattern", level: "Projects" },
+      { name: "Service Layer Pattern", level: "Projects" },
+      { name: "bcrypt", level: "Projects" },
     ]
   },
   {
     name: "Databases & Caching",
-    description: "Relational data modeling, query optimization, and memory cache layer patterns.",
+    description: "Relational and document databases, and Redis caching.",
     skills: [
-      { name: "PostgreSQL", level: "Advanced", highlight: true },
-      { name: "Redis Caching", level: "Advanced", highlight: true },
-      { name: "Cache Aside Pattern", level: "Advanced", highlight: true },
-      { name: "Transactions & ACID", level: "Advanced" },
-      { name: "Connection Pooling", level: "Advanced" },
-      { name: "Dynamic Querying & Sorting", level: "Advanced" }
+      { name: "MySQL", level: "Work", highlight: true },
+      { name: "Redis Caching", level: "Work", highlight: true },
+      { name: "PostgreSQL", level: "Projects", highlight: true },
+      { name: "MongoDB", level: "Projects" },
+      { name: "Cache-Aside Pattern", level: "Projects" },
+      { name: "Transactions & ACID", level: "Projects" },
+      { name: "Connection Pooling", level: "Projects" },
+      { name: "Dynamic Filtering, Sorting & Pagination", level: "Projects" }
     ]
   },
   {
     name: "System Design & Concepts",
-    description: "Foundational concepts for building high-scale, resilient web and backend applications.",
+    description: "Concepts for building scalable, resilient backend applications.",
     skills: [
-      { name: "Layered Architecture", level: "Advanced", highlight: true },
-      { name: "Horizontal Scaling", level: "Intermediate" },
-      { name: "Load Balancing", level: "Intermediate" },
-      { name: "API Gateway Concepts", level: "Intermediate" },
-      { name: "Rate Limiting & Throttling", level: "Intermediate" },
+      { name: "Layered Architecture", level: "Projects", highlight: true },
+      { name: "Rate Limiting & Throttling", level: "Projects" },
+      { name: "Horizontal Scaling", level: "Learning" },
+      { name: "Load Balancing", level: "Learning" },
+      { name: "API Gateway Concepts", level: "Learning" },
       { name: "Message Queues", level: "Learning" },
       { name: "Event-Driven Architecture", level: "Learning" },
-      { name: "Background Jobs", level: "Intermediate" },
+      { name: "Background Jobs", level: "Learning" },
     ]
   },
   {
     name: "Frontend Craftsmanship",
-    description: "Modern, responsive, and performant user interface engineering.",
+    description: "Responsive, performant user interfaces.",
     skills: [
-      { name: "React.js", level: "Production", highlight: true },
-      { name: "Next.js (App Router)", level: "Production", highlight: true },
-      { name: "TypeScript", level: "Production", highlight: true },
-      { name: "JavaScript (ES6+)", level: "Production" },
-      { name: "Tailwind CSS", level: "Production", highlight: true },
-      { name: "Progressive Web Apps (PWA)", level: "Production" },
-      { name: "Redux / Toolkit", level: "Production" },
-      { name: "React Query", level: "Production" },
-      { name: "React Hook Form", level: "Production" },
-      { name: "Framer Motion", level: "Production" },
-      { name: "Vite & Build Tooling", level: "Advanced" }
+      { name: "React.js", level: "Work", highlight: true },
+      { name: "TypeScript", level: "Work", highlight: true },
+      { name: "JavaScript (ES6+)", level: "Work" },
+      { name: "Progressive Web Apps (PWA)", level: "Work", highlight: true },
+      { name: "Redux Toolkit", level: "Work" },
+      { name: "HTML, CSS & SCSS", level: "Work" },
+      { name: "Next.js (App Router)", level: "Projects" },
+      { name: "Tailwind CSS", level: "Projects" },
+      { name: "React Query", level: "Projects" },
+      { name: "React Hook Form", level: "Projects" },
+      { name: "Framer Motion", level: "Projects" }
     ]
   },
   {
     name: "DevOps & Tooling",
-    description: "Continuous integration, environment control, and modern delivery workflows.",
+    description: "Delivery, security headers and testing.",
     skills: [
-      { name: "Git & GitHub", level: "Production", highlight: true },
+      { name: "Git & GitHub", level: "Work", highlight: true },
+      { name: "AWS Amplify", level: "Work" },
+      { name: "CSP, CORS & HSTS Headers", level: "Work", highlight: true },
+      { name: "JMeter Load Testing", level: "Work" },
+      { name: "Jest", level: "Projects" },
+      { name: "Vercel", level: "Projects" },
       { name: "Docker", level: "Learning" },
-      { name: "Vercel Optimization", level: "Production" },
-      { name: "CI/CD Workflows", level: "Intermediate" },
-      { name: "AWS Fundamentals", level: "Intermediate" },
-      { name: "Environment Management", level: "Advanced" }
+      { name: "CI/CD (GitHub Actions, Jenkins)", level: "Learning" }
     ]
   }
 ];
@@ -130,8 +149,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const FEATURED_BACKEND_PROJECT: Project = {
   id: "employee-management-system",
   title: "Employee Management System API",
-  subtitle: "Production-Grade Layered Backend Architecture with Redis Cache-Aside & Dynamic SQL",
-  description: "A robust backend system engineered with Node.js, Express, PostgreSQL, and Redis. Features clean Layered Architecture (Controller -> Service -> Repository), JWT Refresh Token rotation, dynamic filtering/pagination/sorting SQL queries, Zod schema validation, and Redis caching for ultra-fast query responses.",
+  subtitle: "Layered Backend with Redis Cache-Aside & Dynamic SQL",
+  description: "A personal backend project built with Node.js, Express, PostgreSQL and Redis. It uses a layered architecture (Controller -> Service -> Repository), JWT refresh token rotation, dynamic filtering, pagination and sorting in SQL, Zod schema validation, and Redis caching for repeated reads.",
   category: "Featured",
   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
   tags: ["Node.js", "Express", "PostgreSQL", "Redis", "TypeScript", "Zod", "JWT", "Docker"],
@@ -148,7 +167,7 @@ export const FEATURED_BACKEND_PROJECT: Project = {
   ],
   learnings: [
     "Deepened understanding of Repository Pattern decoupling database ORM/SQL logic from business domains.",
-    "Gained practical mastery over Database Indexing strategies and Redis Memory Management."
+    "Learned how database indexing and Redis memory limits shape caching decisions."
   ],
   githubUrl: "https://github.com/DeshmukhMandar3",
   featured: true
@@ -158,10 +177,10 @@ export const PROJECTS: Project[] = [
   {
     id: "cruise-rental",
     title: "CruiseRental",
-    subtitle: "Enterprise Car Rental Platform & Dedicated Admin Dashboard",
-    description: "Comprehensive car rental application inspired by Avis. Built with React, Redux, Node.js, Express, MongoDB, and TypeScript. Features full customer booking flow, vehicle search, authentication, and a separate administrative portal for fleet management.",
+    subtitle: "Car Rental App with Admin Dashboard · Team project, Masai School (2023)",
+    description: "Car rental app modelled on Avis, built by a team with React, Redux, Node.js, Express, MongoDB and TypeScript. Customers search vehicles, book and sign in; a separate admin portal manages the fleet.",
     category: "Full Stack",
-    image: "https://64.media.tumblr.com/ba4e3bc3e6978d8235633c97ec03ffbf/e73fa51cb24bdecf-58/s1280x1920/698b71c9a51fb7998d11774e0dfac1fbf1578aa7.pnj",
+    image: "/projects/cruise-rental.jpg",
     tags: ["React", "Redux", "TypeScript", "Node.js", "Express", "MongoDB", "Chakra UI"],
     architecture: [
       "Decoupled React frontend and separate administrative portal.",
@@ -182,38 +201,38 @@ export const PROJECTS: Project[] = [
   {
     id: "oasis-ecommerce",
     title: "Oasis E-Commerce",
-    subtitle: "High-Traffic E-Commerce Platform Inspired by ShopClues",
-    description: "Collaborative e-commerce platform built to handle multi-category product catalog browsing, cart operations, user profiles, and simulated multi-step payment gateway integrations.",
+    subtitle: "E-Commerce Storefront Modelled on ShopClues · Team project, Masai School (2023)",
+    description: "Team-built e-commerce site with multi-category catalog browsing, cart, user profiles and a simulated multi-step checkout.",
     category: "Frontend",
-    image: "https://64.media.tumblr.com/4fd56442a33295d9f6b3e680f834afa7/2877a4872bf0aa5d-04/s1280x1920/117b55f7f30c155b2b57951f06f1fe050376da2f.pnj",
+    image: "/projects/oasis.jpg",
     tags: ["React", "JavaScript", "Chakra UI", "REST API", "HTML5/CSS3"],
     architecture: [
       "Component-driven layout architecture with reusable product grid layouts.",
       "Local storage sync for persistent shopping carts across reloads."
     ],
-    githubUrl: "https://github.com/DeshmukhMandar3/plucky-cub-1995",
+    githubUrl: "https://github.com/DeshmukhMandar3/Oasis",
     liveUrl: "https://oasis-shop.vercel.app/"
   },
   {
     id: "shopetronics",
     title: "Shopetronics",
-    subtitle: "Global Consumer Electronics Storefront Inspired by GeekBuying",
-    description: "Individually engineered e-commerce app focused on tech gadgets and electronics. Built with focus on responsive layouts, filterable product views, price calculators, and checkout flow.",
+    subtitle: "Electronics Storefront Modelled on GeekBuying · Solo project, Masai School (2022)",
+    description: "Solo e-commerce app for gadgets and electronics, with responsive layouts, filterable product views, a price calculator and checkout.",
     category: "Frontend",
-    image: "https://64.media.tumblr.com/6f342ad10eb2960144419588e96441d5/97f1e4d4c2fbfd77-0b/s1280x1920/c27fd2674a5efdf2860dad41dbabfef1f9bf7ea0.pnj",
+    image: "/projects/shopetronics.jpg",
     tags: ["React", "Chakra UI", "JavaScript", "REST API"],
-    githubUrl: "https://github.com/DeshmukhMandar3/-violet-spark-1183",
+    githubUrl: "https://github.com/DeshmukhMandar3/Shopetronics",
     liveUrl: "https://shopetronics.vercel.app/"
   },
   {
     id: "bestreads",
     title: "BestReads Platform",
-    subtitle: "Interactive Literature Discovery & Book Recommendation Portal",
-    description: "Collaborative book exploration platform built to catalog top literature, user reviews, and curated reading lists inspired by IdeaKart.",
+    subtitle: "Book Discovery Site Modelled on IdeaKart · Team project, Masai School (2022)",
+    description: "Team-built book discovery site with catalogs, user reviews and curated reading lists, written in plain JavaScript.",
     category: "Frontend",
-    image: "https://64.media.tumblr.com/a778c4c577e6dc472c0939bb3862cc09/c35e69207ce998c3-07/s1280x1920/87a7fd8a50b0a04cf69afd0f12105c476d995989.pnj",
+    image: "/projects/bestreads.jpg",
     tags: ["JavaScript", "HTML5", "CSS3", "DOM Manipulation"],
-    githubUrl: "https://github.com/DeshmukhMandar3/past-underwear-3653",
+    githubUrl: "https://github.com/DeshmukhMandar3/BestReads",
     liveUrl: "https://reliable-kashata-dfa0d1.netlify.app/"
   }
 ];
@@ -221,9 +240,9 @@ export const PROJECTS: Project[] = [
 export const TIMELINE: TimelineItem[] = [
   {
     id: "me-foundation",
-    period: "Engineering Foundations",
-    title: "Mechanical Engineering Degree",
-    subtitle: "Problem-Solving, Mathematical Modeling & Engineering Thinking",
+    period: "2016 – 2019",
+    title: "B.E. Mechanical Engineering, University of Mumbai",
+    subtitle: "CGPA 8.33 · Problem-Solving, Mathematical Modeling & Engineering Thinking",
     category: "Education",
     description: "Developed strong analytical skills, thermodynamics, fluid dynamics, and structured engineering methodologies. Laid the mindset foundation for analytical problem solving and quantitative reasoning.",
     keyTakeaways: ["Analytical problem solving", "Systems thinking", "Data & physics modeling"],
@@ -231,38 +250,38 @@ export const TIMELINE: TimelineItem[] = [
   },
   {
     id: "frontend-entry",
-    period: "Developer Transition",
-    title: "Full Stack Web Development Immersion",
-    subtitle: "1200+ Hours Intensive Practical Coding",
-    category: "Career",
-    description: "Dedicated 1200+ hours to intensive web development software engineering principles, building algorithms, data structures, HTML, CSS, JavaScript, and React applications.",
-    keyTakeaways: ["Mastered JS fundamentals", "Built 5+ full applications", "Agile collaboration"],
-    technologies: ["HTML5", "CSS3", "JavaScript", "Git"]
+    period: "Aug 2022 – Apr 2023",
+    title: "Full Stack Web Development, Masai School",
+    subtitle: "1200+ Hours of Hands-On Coding",
+    category: "Education",
+    description: "Full-time programme covering data structures and algorithms, HTML, CSS, JavaScript, React, Redux, Node.js and MongoDB, with team and solo projects.",
+    keyTakeaways: ["JavaScript fundamentals", "Built 5+ full applications", "Agile teamwork"],
+    technologies: ["JavaScript", "React", "Redux", "Node.js", "MongoDB", "Git"]
   },
   {
-    id: "react-mastery",
-    period: "Frontend Mastery",
-    title: "React & Ecosystem Specialist",
-    subtitle: "State Management, Micro-Frontends & Performance Optimization",
+    id: "hyperface-ae1",
+    period: "May 2023 – Mar 2024",
+    title: "Software Engineer (AE-1), Hyperface Technologies",
+    subtitle: "Co-branded Credit Card PWA",
     category: "Career",
-    description: "Delved into React component architecture, Redux Toolkit state flow, Custom Hooks, and TypeScript integration for scalable client applications.",
-    keyTakeaways: ["Reusability", "TypeScript type-safety", "State isolation"],
-    technologies: ["React", "Redux", "TypeScript", "Tailwind CSS"]
+    description: "Built the co-branded credit card PWA from scratch, now live for AU Small Finance Bank, ixigo, Paytm and CheQ, plus a configurable UI system for partner banks.",
+    keyTakeaways: ["Shipping to production", "Reusable UI modules", "Partner-configurable UI"],
+    technologies: ["React", "TypeScript", "PWA", "Redux Toolkit"]
   },
   {
-    id: "hyperface-pwa",
-    period: "Production Engineering",
-    title: "Full Stack Developer at Hyperface Technologies",
-    subtitle: "Production Fintech PWAs & Credit Card Solutions",
+    id: "hyperface-ae2",
+    period: "Apr 2024 – Present",
+    title: "Software Engineer (AE-2), Hyperface Technologies",
+    subtitle: "BFF Services, Sessions & Security",
     category: "Career",
     isCurrent: true,
-    description: "Joined Hyperface to build high-stakes fintech products, handling credit card flows, security authentication, and PWA optimization for scale.",
-    keyTakeaways: ["Production accountability", "Fintech security standards", "PWA performance"],
-    technologies: ["React", "TypeScript", "Node.js", "Express", "PWA"]
+    description: "Moved into backend work: Node.js BFF services, customer-level session architecture, a shared session library, bank security headers and load testing. Led a 3-person team on the NCB Smart Benefit Engine.",
+    keyTakeaways: ["~25–30% fewer auth calls", "~40% less duplicated code", "Led a team of 3"],
+    technologies: ["Node.js", "Express", "MySQL", "Redis", "AWS Amplify", "JMeter"]
   },
   {
     id: "backend-transition",
-    period: "Backend Deep-Dive",
+    period: "Personal projects",
     title: "Node.js, Express & PostgreSQL Architecture",
     subtitle: "Layered Patterns, Relational Modeling & Clean API Design",
     category: "Backend Transition",
@@ -272,17 +291,17 @@ export const TIMELINE: TimelineItem[] = [
   },
   {
     id: "caching-systems",
-    period: "Performance & Caching",
+    period: "Personal projects",
     title: "Redis Cache-Aside & Performance Patterns",
-    subtitle: "Sub-Millisecond Queries & Rate Limiting",
+    subtitle: "Caching, Token Blacklists & Rate Limiting",
     category: "Architecture",
-    description: "Implemented Redis in-memory caching strategies, Cache-Aside pattern, token blacklist management, rate-limiting algorithms, and query latency reduction.",
-    keyTakeaways: ["Sub-5ms response speeds", "Cache invalidation discipline", "Session storage"],
+    description: "Implemented the Cache-Aside pattern with Redis, token blacklist management and rate limiting to cut repeated database reads.",
+    keyTakeaways: ["Cache invalidation discipline", "Session storage", "Rate limiting"],
     technologies: ["Redis", "PostgreSQL", "Connection Pooling", "Cache-Aside"]
   },
   {
     id: "senior-preparation",
-    period: "Next Frontier",
+    period: "Now",
     title: "System Design & Advanced Architecture",
     subtitle: "Scalable Infrastructure, API Gateways & PWA Security",
     category: "Architecture",

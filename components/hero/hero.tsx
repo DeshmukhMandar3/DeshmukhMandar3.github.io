@@ -31,7 +31,7 @@ export const Hero = () => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
               <span className="text-xs font-mono text-slate-300 font-medium">
-                Full Stack Developer <span className="text-slate-600">|</span> PWAs, Auth & Backend Architecture
+                Full Stack Software Engineer <span className="text-slate-600">|</span> PWAs, Auth & Backend
               </span>
             </div>
           </motion.div>
@@ -58,7 +58,7 @@ export const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p className="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed">
-              Full Stack Engineer at <span className="text-slate-200 font-semibold">Hyperface Technologies</span> with a Mechanical Engineering foundation. Crafting high-performance Node.js backend services, PostgreSQL schemas, Redis Cache-Aside pipelines, and production PWAs.
+              Software Engineer at <span className="text-slate-200 font-semibold">Hyperface Technologies</span> since 2023. I build the React PWAs behind co-branded credit cards for AU Small Finance Bank, ixigo, Paytm and CheQ, and the Node.js services that handle their sessions and auth.
             </p>
           </motion.div>
 
@@ -99,23 +99,23 @@ export const Hero = () => {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-xl">
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/60 text-left">
-                <div className="text-2xl sm:text-3xl font-mono font-bold text-emerald-400">1200+</div>
-                <div className="text-xs text-slate-400 font-medium mt-1">Practical Coding Hours</div>
+                <div className="text-2xl sm:text-3xl font-mono font-bold text-emerald-400">3 yrs</div>
+                <div className="text-xs text-slate-400 font-medium mt-1">Building fintech products</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/60 text-left">
-                <div className="text-2xl sm:text-3xl font-mono font-bold text-cyan-400">Hyperface</div>
-                <div className="text-xs text-slate-400 font-medium mt-1">Fintech PWA & Cards</div>
+                <div className="text-2xl sm:text-3xl font-mono font-bold text-cyan-400">4</div>
+                <div className="text-xs text-slate-400 font-medium mt-1">Card partners live on a PWA I built</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/60 text-left">
-                <div className="text-2xl sm:text-3xl font-mono font-bold text-violet-400">Redis & SQL</div>
-                <div className="text-xs text-slate-400 font-medium mt-1">Cache-Aside & Dynamic SQL</div>
+                <div className="text-2xl sm:text-3xl font-mono font-bold text-violet-400">~25–30%</div>
+                <div className="text-xs text-slate-400 font-medium mt-1">Fewer auth API calls after a session redesign</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/60 text-left">
-                <div className="text-2xl sm:text-3xl font-mono font-bold text-emerald-400">99.9%</div>
-                <div className="text-xs text-slate-400 font-medium mt-1">Target Systems Reliability</div>
+                <div className="text-2xl sm:text-3xl font-mono font-bold text-emerald-400">~40%</div>
+                <div className="text-xs text-slate-400 font-medium mt-1">Less duplicated code via a shared NPM library</div>
               </div>
             </div>
           </motion.div>

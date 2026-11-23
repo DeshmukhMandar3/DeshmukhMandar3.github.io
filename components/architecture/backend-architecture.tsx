@@ -45,7 +45,7 @@ export const BackendArchitecture = () => {
             Backend <span className="text-gradient-emerald">Architecture Deep-Dive</span>
           </h2>
           <p className="text-slate-400 mt-3 max-w-2xl text-base sm:text-lg">
-            Inside the Employee Management System: A high-concurrency Node.js API with Layered Architecture, PostgreSQL, and Redis caching.
+            Inside my Employee Management System, a personal project: a Node.js API with layered architecture, PostgreSQL and Redis caching.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export const BackendArchitecture = () => {
             </div>
             <div>
               <div className="text-xs font-mono font-bold text-slate-200">Cache-Aside Redis</div>
-              <div className="text-[11px] text-slate-400">Sub-5ms Query Speed</div>
+              <div className="text-[11px] text-slate-400">Repeated Reads Skip the DB</div>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ export const BackendArchitecture = () => {
               <div className="flex items-center gap-2 border-b border-slate-800 pb-3 mb-4">
                 <FolderTree className="w-4 h-4 text-emerald-400" />
                 <h3 className="font-mono text-sm font-bold text-slate-100">
-                  Production Folder Architecture
+                  Folder Structure
                 </h3>
               </div>
               <pre className="font-mono text-xs text-slate-300 bg-slate-950 p-4 rounded-xl border border-slate-800/80 overflow-x-auto leading-relaxed">
