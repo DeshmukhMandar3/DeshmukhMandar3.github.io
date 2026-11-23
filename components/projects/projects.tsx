@@ -29,7 +29,7 @@ export const Projects = () => {
             Featured <span className="text-gradient-emerald">Projects</span>
           </h2>
           <p className="text-slate-400 mt-3 max-w-2xl text-base sm:text-lg">
-            Full stack and frontend projects I built while learning, with links to the code and live demos.
+            A session library I built on my own, plus full stack and frontend projects from Masai School, with links to the code and live demos.
           </p>
         </div>
 

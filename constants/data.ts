@@ -175,6 +175,22 @@ export const FEATURED_BACKEND_PROJECT: Project = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "handoff-session",
+    title: "handoff-session",
+    subtitle: "Session Library for Partner-Launched Web Apps · Personal project (2026)",
+    description: "TypeScript library for apps opened from a partner's app, like a bank launching a credit card PWA. The partner's backend sends an encrypted, short-lived payload; the app turns it into a one-time launch link and an HttpOnly session cookie that covers all of the customer's accounts.",
+    category: "Backend",
+    image: "/projects/handoff-session.jpg",
+    tags: ["TypeScript", "Node.js", "Express", "Redis", "AES-256-GCM", "Vitest", "Docker", "GitHub Actions"],
+    architecture: [
+      "AES-256-GCM payloads bound to the partner id; replayed payloads and reused launch links are refused.",
+      "Customer-level sessions with idle and absolute timeouts; tokens stored only as hashes in Redis."
+    ],
+    githubUrl: "https://github.com/DeshmukhMandar3/handoff-session",
+    liveUrl: "https://handoff-session.vercel.app",
+    featured: true
+  },
+  {
     id: "cruise-rental",
     title: "CruiseRental",
     subtitle: "Car Rental App with Admin Dashboard · Team project, Masai School (2023)",
